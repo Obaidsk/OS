@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+int a;
+printf("Enter  either 1 or 2:");
+scanf("%d",&a);
+ if (a==1){
+     printf("you have a great day ");
+ } else 
+      if(a==2){
+          printf("hey");
+      }else{
+          printf("wrong number");
+      }
+ 
+return 0;
+}
