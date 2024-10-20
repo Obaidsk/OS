@@ -1,0 +1,28 @@
+ #include<stdio.h>
+int main (){
+  char user_name[50];
+  int age;
+  char gender, M ,F;
+   
+  
+   printf("Enetr your user_name:");
+   scanf("%s", user_name);
+   
+   printf("Enter your age:");
+   scanf("%d",&age);
+   
+   printf("Enter your gender (M/F):");
+   scanf(" %c",&gender);
+   
+    if (age>=18 && (gender== 'M' || gender=='F'))
+    {
+        printf("You are eligible for voting");
+    }else if (age<18){
+        printf("You are underage");
+    }else  {
+        printf("missing info");
+    }
+    return 0;
+}
+    
+  
