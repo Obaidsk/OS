@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+    int   vowel;
+    printf("Enter your num :");
+    scanf("%d",&vowel);
+     switch(vowel){
+         case 1:
+         int a,b;
+         printf("Enter any number");
+         scanf("%d%d",&a,&b);
+         a+=b;
+         printf("add:%d",a);
+         break;
+         case 2:
+         int c,d;
+         printf("Enter any number");
+         scanf("%d%d",&c,&d);
+         c-=d;
+         printf("add:%d",c);
+         break;
+         
+         
+         
+         default:
+         printf("not a vowel");
+     }
+    
+    
+
+    return 0;
+}
