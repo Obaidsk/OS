@@ -1,0 +1,117 @@
+#include <stdio.h>
+int mains();
+int condition();
+int forr();
+int main() {
+   mains();
+   condition();
+   forr();
+}
+// basic program.
+int mains(){
+    printf("walcome to my restaurant code");
+    return 0;
+}
+//conditional program
+int condition() {
+    int i;
+    char charr;  
+    do {
+        printf("\nEnter your budget: ");
+        scanf("%d", &i);
+        if (i >= 100) {
+            printf("You can afford Villaya restaurant\n");
+            int dish;
+            printf("Enter a number to choose your favorite dish (1-7): ");
+            scanf("%d", &dish);
+            switch (dish) {
+                case 1:
+                       printf("Dal Bati Churma\n"); 
+                       break;
+                case 2:
+                       printf("Pav Bhaji\n");
+                       break;
+                case 3: 
+                       printf("Poori Sabji\n"); 
+                       break;
+                case 4:
+                       printf("Veg Biryani\n");
+                       break;
+                case 5:  
+                       printf("Aloo Paratha\n");
+                       break;
+                case 6: 
+                       printf("Chapati Naa\n");
+                       break;
+                default:
+                        printf("This dish is not available\n");
+                        break;
+            }
+        }
+        else if (i >= 80) {
+            printf("You can afford only Gandhi restaurant\n");
+            int dish;
+            printf("Enter a number to choose your favorite dish (1-7): ");
+            scanf("%d", &dish);
+            switch (dish) {
+                case 1: 
+                      printf("Chole Bhature\n"); 
+                      break;
+                case 2:
+                       printf("Malpua\n");
+                       break;
+                case 3: 
+                       printf("Poori Sabji\n");
+                       break;
+                case 4:
+                       printf("Thandai\n");
+                       break;
+                case 5:
+                       printf("Aloo Paratha\n"); 
+                       break;
+                case 6: 
+                       printf("Chapati, Tandoori Chicken\n");
+                       break;
+                default: 
+                        printf("This dish is not available\n"); break;
+            }
+        } 
+        else {
+            printf("You cannot afford any restaurant\n");
+        }
+        printf("\nDo you want to continue? (y/n): ");
+        getchar();  
+        charr = getchar();  
+ } while (charr == 'y' || charr == 'Y'); 
+    return 0; 
+}
+int forr(){
+    int i;
+    printf("\n enter your rating: ");
+    scanf("%d", &i);
+    for(i=1;i<=2;i++){
+    int rating;
+            printf("Enter your rating (1-5): ");
+            scanf("%d",&rating);
+            switch (rating) {
+                case 1: 
+                      printf("one star\n"); 
+                      break;
+                case 2:
+                       printf("two star\n");
+                       break;
+                case 3: 
+                       printf("three star\n");
+                       break;
+                case 4:
+                       printf("four star\n");
+                       break;
+                case 5:
+                       printf("five star\n"); 
+                       break;
+                default: 
+                        printf("not intrested\n"); 
+                        break;
+            }
+    }
+}
