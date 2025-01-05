@@ -1,0 +1,16 @@
+#include <stdio.h>
+int printHello();
+int printgoodbye();
+
+int main() {
+  printHello();
+  printgoodbye();
+    return 0;
+}
+int printHello(){
+    printf("hello\n");
+}
+
+int printgoodbye(){
+    printf("good bye\n");
+}
