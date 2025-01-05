@@ -1,0 +1,13 @@
+#include <stdio.h>
+int fun();
+int main() {
+ fun();
+}
+int fun()
+{
+for(int a=0; a<=10; a=a+1){
+        
+        printf("%d\n",a);
+    }
+return 0;
+}
