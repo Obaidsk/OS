@@ -1,0 +1,9 @@
+#include <stdio.h>
+int name();
+int main() {
+    name(); 
+}
+int name(){
+ printf("obaid");
+ return 0;
+}
