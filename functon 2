@@ -1,0 +1,17 @@
+#include <stdio.h>
+int swap();
+int main() {
+     int c,d;
+ printf("enter two number");
+ scanf("%d %d",&c,&d); 
+ printf("\n the number before swaping are %d and %d",c,d);
+ swap(c,d);
+   
+}
+int swap(int a,int b){
+ b=a+b-(a=b);
+ printf("\n the number after swaping are %d and %d",a,b);
+ 
+    return 0;
+
+}
