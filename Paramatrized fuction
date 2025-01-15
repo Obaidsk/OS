@@ -1,0 +1,61 @@
+ 
+
+#include <stdio.h>
+#include<conio.h>
+
+    int Add (int a,int b);
+    int Sub (int a,int b);
+    int mult (int a,int b);
+    int Div (int a,int b);
+     
+    int Add (int a,int b) 
+    {
+        int c;
+      //  printf("enter the value of a and b");
+        //c=a+b;
+        printf("Addition is=%d",a+b);
+        
+    }
+    int Sub(int a,int b) 
+    {
+        int d;
+      //  printf("enter the value of a and b");
+        //d=a-b;
+        printf("Subtraction  is=%d",a-b);
+    }
+     int mult (int a,int b)
+     { int f;
+       // printf("enter the value of a and b");
+        f =a*b;
+        printf("multi is= %d",f);
+    }
+  
+      int Div (int a,int b)
+       { 
+           int e;
+       // printf("enter the value of a and b");
+        e=a/b;
+        printf("div is=%d",e); 
+       }
+        int main ()
+        {
+            printf("enter the value of a and b");
+        Add(10,5);
+        Sub(10,5);
+        mult(10,5);
+        Div(10,5);
+        return 0;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
